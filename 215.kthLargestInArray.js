@@ -16,7 +16,9 @@ var findKthLargest = function(nums, k) {
     // cause this implementation is sorting the array
     // from small to large
     // need to convert k into the index of 
-    // the sorted array first
+    // the sorted array first, e.g.
+    //  if 10 elements in array, the 3rd element should be
+    //  in index (10 - 3) = 7 in the sorted array
     k = nums.length - k;
     
     let start = 0, end = nums.length - 1;
