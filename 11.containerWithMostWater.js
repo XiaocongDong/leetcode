@@ -2,7 +2,7 @@
 
 /**
  * My solution, pointers collison
- * 
+ * Mathematical induction(数学归纳法)
  */
 
  /**
@@ -14,6 +14,7 @@ var maxArea = function(height) {
     let max = 0;
     
     while(i < j) {
+        // calculate the volume
         let volume = (j - i) * Math.min(height[i], height[j]);
         
         max = Math.max(volume, max);
